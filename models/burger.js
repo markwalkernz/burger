@@ -8,13 +8,13 @@ var burger = {
 		});
 	},
 	// valuesObject is an object containing key value pairs for the new data
-	create: function(tableName, valuesObject, cb) {
+	create: function(valuesObject, cb) {
 		orm.insertOne("burgers", valuesObject, function(res) {
 		  cb(res);
 		});
 	},
 	// searchCol and searchVal indicate which record is to be updated
-	update: function(tableName, valuesObject, searchCol, searchVal, cb) {
+	update: function(valuesObject, searchCol, searchVal, cb) {
 	    orm.updateOne("burgers", valuesObject, searchCol, searchVal, function(res) {
 	      cb(res);
 	    });
