@@ -1,3 +1,12 @@
-ul {
-    list-style-type: none;
+
+.order-form {
+	padding: 20px;
+}
+
+.thumbnail {
+	min-height: 125px;
+}
+
+.thumbnail img {
+	max-width : 50%;
 }
